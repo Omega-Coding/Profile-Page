@@ -3,26 +3,28 @@
 html
 {
 	font-size: 16px;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 body{
-	background-color: #4d4d4d;
+	background-color: #151515;
 	text-align: center;
-	width : 100%;
-	padding-left: 0;
-	padding-right: 0;
+	max-width : 100%;
+	/*padding-left: 0;
+	padding-right: 0;*/
 	font-family: 'Quicksand', 'sans-serif';
+	overflow-x: hidden;
 }
 
 /* Header and Nav Bar */
 header{
-	width: 100%;
+	max-width: 100%;
 	height : 120px;
-	left: 0;
 }
 
 nav{
-	max-width: 95%;
+	max-width: 100%;
 	margin: 0;
   	padding: 0;
   	overflow: hidden;
@@ -30,7 +32,7 @@ nav{
 
 div#logo{
 	width : 50%;
-	margin-left: 10px;
+	margin: 0;
 }
 
 a.a-logo{
@@ -49,6 +51,7 @@ ul#ul-0{
 	width: 50%;
 	list-style: none;
 	min-width: 450px;
+
 }
 
 li.li-0{
@@ -63,7 +66,7 @@ a.a-0{
 }
 
 a.a-0:hover{
-	color:#000000;
+	color:#868686;
 }
 
 /*
@@ -111,3 +114,31 @@ nav {
   	line-height: 50px;
   	font-weight: 100;
 }
+
+/*Image below Quote Box */
+
+.img-container{
+	width: 100%;
+	height: 1110px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	object-fit: contain;
+}
+
+/*.img_container{ 
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+  width: 100%;
+  background: url(https://res.cloudinary.com/dt4qeehms/image/upload/q_100/v1470079590/Portfolio/sketch1470013065008_wj0znd.png) no-repeat center center; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}*/
