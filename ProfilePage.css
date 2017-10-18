@@ -1,26 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand');
+
+html
+{
+	font-size: 16px;
+}
+
 body{
+	background-color: #4d4d4d;
 	text-align: center;
-	padding-left: 60px;
-	padding-right: 60px;
+	width : 100%;
+	padding-left: 0;
+	padding-right: 0;
+	font-family: 'Quicksand', 'sans-serif';
 }
 
-ul#menu{
-	float: right;
-	text-align: right;
-	padding: 0px 20px 0px;
-	margin: 0;
+/* Header and Nav Bar */
+header{
 	width: 100%;
-	height: 28px;
-	background-color: #ffffff;
+	height : 120px;
+	left: 0;
 }
 
-li.menu{
-	display: inline;
+nav{
+	max-width: 95%;
+	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
 }
 
-a.menu{
-	color: #000000;
-	text-decoration-line: none;
-	padding: 16px;
-	font-size: 20px;
+div#logo{
+	width : 50%;
+	margin-left: 10px;
+}
+
+a.a-logo{
+	float:left;
+	margin: 0;
+	font-family: 'indie flower', cursive;
+	text-decoration: none;
+	font-size: 2.5rem;
+	color : #ffffff;
+	width: 300px;
+
+}
+
+ul#ul-0{
+	float:right;
+	width: 50%;
+	list-style: none;
+	min-width: 450px;
+}
+
+li.li-0{
+	display: inline-block;
+	width: 100px;
+}
+
+a.a-0{
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+a.a-0:hover{
+	color:#000000;
+}
+
+/*
+@media screen and (max-width:574px) {
+  #logo {
+    float: none;
+    margin: 0 auto;
+  }
+  #ul-0 {
+    float: none;
+    margin: 0 25px;
+    }
+ .li-0:first-of-type {margin-left:0}
+}
+
+@media screen and (max-width:493px) {
+nav {
+  overflow: visible
+}
+#ul-0 {
+  height: auto;
+  padding-top: 30px;
+  line-height: 30px;
+}
+.li-0 {
+  display: block;
+  margin: 0;
+}
+} */
+
+/* Quote Box */
+.quote{
+	width: 100%;
+	height: 350px;
+	min-width: 300px;
+	overflow: auto;
+}
+
+.b_quote {
+	letter-spacing: 4px;
+  	color: white;
+  	padding: 80px 40px 0 40px;
+  	font-size: 320%;
+  	max-width: 700px;
+  	line-height: 50px;
+  	font-weight: 100;
 }
