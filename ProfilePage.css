@@ -1,26 +1,368 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC'); /*font-family: 'Amatic SC', cursive;*/
+
+html
+{
+	font-size: 16px;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 body{
+	background-color: #F4F4F4;
 	text-align: center;
-	padding-left: 60px;
-	padding-right: 60px;
-}
-
-ul#menu{
-	float: right;
-	text-align: right;
-	padding: 0px 20px 0px;
+	max-width : 100%;
+	/*padding-left: 0;
+	padding-right: 0;*/
+	font-family: 'Quicksand', 'sans-serif';
+	overflow-x: hidden;
 	margin: 0;
+}
+
+/* Header and Nav Bar */
+header{
+	max-width: 100%;
+	height : 120px;
+	background-color: #151515;
+}
+
+nav{
+	max-width: 100%;
+	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+}
+
+div#logo{
+	width : 50%;
+	margin: 0;
+}
+
+a.a-logo{
+	float:left;
+	margin: 0;
+	font-family: 'Amatic sc', cursive;
+	text-decoration: none;
+	font-size: 2.5rem;
+	color : #ffffff;
+	width: 300px;
+
+}
+
+.a-logo:hover{
+	color: #868686;
+	text-decoration: none;
+}
+
+ul#ul-0{
+	float:right;
+	width: 50%;
+	list-style: none;
+	min-width: 450px;
+	margin-top: 16px;
+}
+
+li.li-0{
+	display: inline-block;
+	width: 100px;
+}
+
+a.a-0{
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+a.a-0:hover{
+	color:#868686;
+}
+
+
+/* @media screen and (max-width:574px) {
+  #logo {
+    float: none;
+    margin: 0 auto;
+  }
+  #ul-0 {
+    float: none;
+    margin: 0 25px;
+    }
+ .li-0:first-of-type {margin-left:0}
+}
+
+@media screen and (max-width:493px) {
+nav {
+  overflow: visible
+}
+#ul-0 {
+  height: auto;
+  padding-top: 30px;
+  line-height: 30px;
+}
+.li-0 {
+  display: block;
+  margin: 0;
+}
+}  */
+
+/* Quote Box */
+.quote{
 	width: 100%;
-	height: 28px;
-	background-color: #ffffff;
+	height: 350px;
+	min-width: 300px;
+	overflow: auto;
+	background-color: #151515;
 }
 
-li.menu{
-	display: inline;
+p#b_quote {
+	letter-spacing: 4px;
+  	color: white;
+  	padding: 80px 40px 0 40px;
+  	font-size: 320%;
+  	max-width: 780px;
+  	line-height: 50px;
+  	font-weight: 100;
+  	font-family: 'Quicksand', 'sans-serif';
 }
 
-a.menu{
-	color: #000000;
-	text-decoration-line: none;
-	padding: 16px;
-	font-size: 20px;
+/*Image below Quote Box */
+
+.img-container{
+	width: 100%;
+	height: 1110px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	object-fit: contain;
+}
+
+/* Project Container */
+#container-3 {
+  background-color:#151515;
+
+}
+
+#container-3 h3{
+  color:#F4F4F4;
+  padding: 50px 40px 50px 40px;
+  letter-spacing: 4px;
+  text-decoration: underline;
+}
+
+#grid {
+    max-width:100%;
+    margin:0 auto;
+    padding:0;
+    font-size:0;
+    list-style:none;
+    background-color:#151515;
+  
+}
+#grid li {
+    display: inline-block;
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+.gridCell {
+  border:3px solid #151515;
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+.gridImg {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 0.8s;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+  
+    
+}
+
+#grid li:hover .gridImg {
+    transform:scale(1.05);
+      -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+  
+}
+        
+/* If have the overlay layer */
+.gridOverlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #F4F4F4; 
+    background-size: 50px 50px;
+    opacity:0;
+    transition:all 0.6s;
+  
+}
+#grid li:hover .gridOverlay {
+    opacity:0.2;
+  
+}
+
+.gridText {
+    display:block;
+    box-sizing:border-box;
+    position:absolute;
+    margin: auto auto auto -4.1em;
+    left: 50%;
+    padding: 15px;
+    text-align:center;
+    background-color: #151515;
+    border-radius: .2em;
+    font-size:18px;
+    top:50%;
+    color:white;
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .4s;
+}
+#grid li:hover .gridText {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #grid li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #grid li {
+        width:50%;
+    }
+}
+
+@media (max-width: 550px) {
+    #grid li {
+        width:100%;
+    }
+}
+
+/*SkillBox */
+i {
+  	font-size: 600%;
+  	color: black;
+}
+
+#container-2 { 
+  	background: #F4F4F4;
+  	padding-bottom: 20px;
+  	padding-top: 20px;
+}
+
+#container-2 h3 {
+	text-align: center;
+  	letter-spacing: 4px;
+  	padding: 50px 40px 50px 40px;
+  	text-decoration: underline;
+}
+
+.row-fluid {
+    width: 100%;
+}
+
+.skills-block {
+    text-align: center;
+}
+
+.iconSkill {
+    margin-bottom: 40px;
+}
+
+/*About Box */
+
+#container-4 {
+  width: 100%;  
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  padding-bottom: 100px;
+  background: #151515;
+  color: white;
+  
+}
+
+.about {
+  display: block;
+  letter-spacing: 2px;
+  
+}
+
+.contact {
+  max-width: 75%;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.follow {
+  display: block;
+  letter-spacing: 2px;
+}
+
+.about h3, .contact h3, .follow h3 {
+  margin: 100px 0 25px 0;
+}
+
+.follow h4{
+  margin: 70px 0 25px 0px;
+  text-align: center;
+}
+
+.social-icon {
+  font-size: 200%;
+  padding: 0 20px 0 0;
+}
+
+.social-icon i {
+  color: white;
+}
+
+.buttonSend {
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: .2em;
+    color: black;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  	font-weight: bold;
+}
+
+.buttonSend:hover {
+    background-color: #919191;
+  color: #D7D7D7;
+}
+
+/*Footer */
+footer { 
+    padding: 30px 80px 20px 0;
+    display: block;
+    background:#151515; 
+    color: white;
+    font-size: 85%;
+    text-align: end;
 }
