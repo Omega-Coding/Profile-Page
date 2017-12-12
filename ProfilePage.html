@@ -147,21 +147,22 @@
       </section>
     <section class="contact col-lg-4 col-sm-4 col-xs-12">
       <h3>GET IN TOUCH</h3>
-      <form role="form">
+      <span class="alert">Message Sent</span>
+      <form role="form" id="contactForm">
 
         <div class="form-group">
-          <input type="text" id="name" placeholder="NAME" class="form-control" id="usr">
+          <input type="text" id="name" placeholder="NAME" class="form-control" required>
         </div>
 
         <div class="form-group">
-          <input type="email" id="email" placeholder="E-MAIL" class="form-control" id="eml">
+          <input type="email" id="email" placeholder="E-MAIL" class="form-control" required>
         </div>
 
         <div class="form-group">
-          <textarea class="form-control" id="message" placeholder="YOUR MESSAGE" rows="5" id="msg"></textarea>
+          <textarea class="form-control" id="message" placeholder="YOUR MESSAGE" rows="5"></textarea>
         </div>
 
-        <input type="button" class="buttonSend" value="SEND">
+        <input type="submit" class="buttonSend" value="SEND">
         
       </form>
     </section>
@@ -179,6 +180,9 @@
 </div>
   
   <footer><p>© 2017 Shrey Sudan • All Rights Reserved</p></footer>
-  
+
+  <!--    Scripts   -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

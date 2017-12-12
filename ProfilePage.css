@@ -357,6 +357,10 @@ i {
   color: #D7D7D7;
 }
 
+ .alert{
+  display: none;
+ }
+
 /*Footer */
 footer { 
     padding: 30px 80px 20px 0;
