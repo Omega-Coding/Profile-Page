@@ -23,7 +23,8 @@ body{
 header{
 	max-width: 100%;
 	height : 120px;
-	background-color: #151515;
+    background-color: #151515;
+    font-family: 'Amatic SC', cursive;
 }
 
 nav{
@@ -46,7 +47,6 @@ a.a-logo{
 	font-size: 2.5rem;
 	color : #ffffff;
 	width: 300px;
-
 }
 
 .a-logo:hover{
@@ -69,7 +69,7 @@ li.li-0{
 
 a.a-0{
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 22px;
 	color: #ffffff;
 }
 
@@ -105,24 +105,58 @@ nav {
 }
 }  */
 
+@media only screen and (max-width: 750px){
+    ul#ul-0 {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-left: 0;
+        min-width: 0px;
+    }
+
+    div#logo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #logo::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    a.a-logo{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .quote {
+        height: 250px;
+    }
+
+}
+
 /* Quote Box */
 .quote{
 	width: 100%;
 	height: 350px;
 	min-width: 300px;
 	overflow: auto;
-	background-color: #151515;
+    background-color: #151515;
 }
 
 p#b_quote {
 	letter-spacing: 4px;
   	color: white;
   	padding: 80px 40px 0 40px;
-  	font-size: 320%;
+    font-size: 440%;  
   	max-width: 780px;
-  	line-height: 50px;
+  	line-height: 60px;
   	font-weight: 100;
-  	font-family: 'Quicksand', 'sans-serif';
+    font-family: 'Amatic SC', 'cursive'; 
 }
 
 /*Image below Quote Box */
@@ -314,6 +348,12 @@ i {
   letter-spacing: 2px;
 }
 
+@media only screen and (max-width: 576px){
+    .contact {
+        max-width: 100%;
+    }
+}
+
 .follow {
   display: block;
   letter-spacing: 2px;
@@ -354,7 +394,7 @@ i {
 
 .buttonSend:hover {
     background-color: #919191;
-  color: #D7D7D7;
+    color: #D7D7D7;
 }
 
  .alert{
