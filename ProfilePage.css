@@ -114,6 +114,11 @@ nav {
         padding-top: 15px;
         padding-left: 0;
         min-width: 0px;
+        padding-bottom: 15px;
+    }
+    
+    header {
+        height: 160px;
     }
 
     div#logo {
@@ -134,7 +139,11 @@ nav {
     }
 
     .quote {
-        height: 250px;
+        height: 400px;
+    }
+
+    p#b_quote {
+        padding: 40px 40px 0 40px;
     }
 
 }
